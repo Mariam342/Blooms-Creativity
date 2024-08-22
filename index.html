@@ -38,15 +38,15 @@
             font-size: 16px;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #f0f0f0; /* لون الخلفية */
+            color: #333; /* لون النص */
             direction: rtl; /* لجعل الموقع من اليمين لليسار */
         }
 
         /* تصميم الهيدر */
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #333; /* لون خلفية الهيدر */
+            color: #fff; /* لون النص في الهيدر */
             padding: 20px;
             text-align: center;
         }
@@ -59,7 +59,7 @@
         }
 
         h1, h2, h3 {
-            color: #333;
+            color: #333; /* لون العناوين */
         }
 
         /* تصميم الخلفية */
@@ -71,14 +71,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: #fff; /* لون النص في القسم الخلفي */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* ظل النص */
         }
 
         /* تصميم الأزرار */
         .btn {
-            background-color: #333;
-            color: #fff;
+            background-color: #333; /* لون خلفية الأزرار */
+            color: #fff; /* لون النص في الأزرار */
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
@@ -86,13 +86,13 @@
         }
 
         .btn:hover {
-            background-color: #555;
+            background-color: #555; /* لون خلفية الأزرار عند التمرير */
         }
 
         /* تصميم الفوتر */
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #333; /* لون خلفية الفوتر */
+            color: #fff; /* لون النص في الفوتر */
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -113,8 +113,28 @@
 
     <div class="container">
         <h2>أعمالي</h2>
-        <!-- أضف هنا صور الأعمال الخاصة بك -->
-        <p>ستُعرض أعمالي هنا، تأكد من حمايتها.</p>
+
+        <!-- مشروع 1 -->
+        <div class="project">
+            <h3>اسم المشروع الأول</h3>
+            <img src="project1-image.jpg" alt="صورة المشروع الأول" style="max-width: 100%; height: auto;">
+            <p>
+                هذا هو وصف المشروع الأول. في هذا المشروع، قمت بـ [ضع وصف المشروع هنا]. 
+                لقد استخدمت [ضع الأدوات أو البرامج التي استخدمتها] لإنجاز هذا العمل.
+            </p>
+        </div>
+
+        <!-- مشروع 2 -->
+        <div class="project">
+            <h3>اسم المشروع الثاني</h3>
+            <img src="project2-image.jpg" alt="صورة المشروع الثاني" style="max-width: 100%; height: auto;">
+            <p>
+                هذا هو وصف المشروع الثاني. في هذا المشروع، قمت بـ [ضع وصف المشروع هنا]. 
+                لقد استخدمت [ضع الأدوات أو البرامج التي استخدمتها] لإنجاز هذا العمل.
+            </p>
+        </div>
+
+        <!-- أضف المزيد من المشاريع بنفس الطريقة -->
     </div>
 
     <footer>
