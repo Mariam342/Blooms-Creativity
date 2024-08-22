@@ -40,7 +40,6 @@
             padding: 0;
             background-color: #f0f0f0; /* لون الخلفية */
             color: #333; /* لون النص */
-            direction: rtl; /* لجعل الموقع من اليمين لليسار */
         }
 
         /* تصميم الهيدر */
@@ -99,26 +98,38 @@
             width: 100%;
             bottom: 0;
         }
+
+        /* نصوص باللغة العربية */
+        .arabic-text {
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* نصوص باللغة الإنجليزية */
+        .english-text {
+            direction: ltr;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="arabic-text">
         <h1>أهلاً بك في موقعي الشخصي</h1>
         <p>أنا مصممة جرافيك، وهذه بعض من أعمالي</p>
     </header>
 
-    <div class="hero">
+    <div class="hero arabic-text">
         <h2>مرحباً بك في معرض أعمالي</h2>
     </div>
 
     <div class="container">
-        <h2>أعمالي</h2>
+        <h2 class="arabic-text">أعمالي</h2>
 
         <!-- مشروع 1 -->
         <div class="project">
-            <h3>progect:Shing Yang</h3>
-            <img src="project1-image.jpg" alt="Shing yang Restaurant Logo Design" style="max-width: 100%; height: auto;">
-            <p>
+            <h3 class="arabic-text">اسم المشروع الأول</h3>
+            <img src="project1-image.jpg" alt="صورة المشروع الأول" style="max-width: 100%; height: auto;">
+            <p class="arabic-text">
                 هذا هو وصف المشروع الأول. في هذا المشروع، قمت بـ [ضع وصف المشروع هنا]. 
                 لقد استخدمت [ضع الأدوات أو البرامج التي استخدمتها] لإنجاز هذا العمل.
             </p>
@@ -126,18 +137,18 @@
 
         <!-- مشروع 2 -->
         <div class="project">
-            <h3>اسم المشروع الثاني</h3>
-            <img src="project2-image.jpg" alt="صورة المشروع الثاني" style="max-width: 100%; height: auto;">
-            <p>
-                هذا هو وصف المشروع الثاني. في هذا المشروع، قمت بـ [ضع وصف المشروع هنا]. 
-                لقد استخدمت [ضع الأدوات أو البرامج التي استخدمتها] لإنجاز هذا العمل.
+            <h3 class="english-text">Project Two</h3>
+            <img src="project2-image.jpg" alt="Project Two Image" style="max-width: 100%; height: auto;">
+            <p class="english-text">
+                This is a description of the second project. In this project, I did [describe your project here].
+                I used [mention tools or software you used] to accomplish this work.
             </p>
         </div>
 
         <!-- أضف المزيد من المشاريع بنفس الطريقة -->
     </div>
 
-    <footer>
+    <footer class="arabic-text">
         <p>© 2024 جميع الحقوق محفوظة.</p>
     </footer>
 </body>
